@@ -11,17 +11,6 @@ from Servicios import ServicioCRUD
 from Dueño import DuenioCRUD, MascotaCRUD
 from datetime import datetime, timedelta
 from plantilla import dropdown_con_agregar
-import locale
-
-try:
-    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
-except locale.Error:
-    try:
-        locale.setlocale(locale.LC_TIME, "es_ES")
-    except locale.Error:
-        # Usa configuración por defecto si no está disponible
-        print("⚠️ Locale 'es_ES' no está disponible en este sistema. Usando configuración por defecto.")
-
 
 class CitaCRUD:
     citas = db["registro_citas"]  # Asegúrate que 'db' ya esté definido correctamente
