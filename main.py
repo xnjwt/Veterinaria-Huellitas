@@ -266,4 +266,4 @@ def main(page: ft.Page):
     page.go("/dueños")
 
 
-ft.app(target=main)
+ft.app(target=main, view=flet.WEB_BROWSER)
